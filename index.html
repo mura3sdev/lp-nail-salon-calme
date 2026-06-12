@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ネイルサロン カルム｜自由が丘駅3分・夜22時まで</title>
+<meta name="description" content="自由が丘駅徒歩3分のプライベートネイルサロン。オフィスにも馴染む上品なデザインが得意です。平日は夜22時まで営業、仕事帰りにそのまま通えます。完全予約制・LINEから24時間ご予約受付。">
+
+<!-- OGP -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="ネイルサロン カルム｜自由が丘駅3分・夜22時まで">
+<meta property="og:description" content="オフィスにも馴染む上品ネイル。平日22時まで営業のプライベートサロン。LINEから24時間ご予約いただけます。">
+<meta property="og:url" content="https://example.com/">
+<meta property="og:image" content="https://example.com/assets/img/ogp.png">
+<meta property="og:site_name" content="Nail Salon Calme">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- favicon（ネイルチップをかたどったSVG） -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232E2722'/%3E%3Cpath d='M16 6c4 0 6.5 3.2 6.5 8.2 0 5.8-2 11.8-6.5 11.8s-6.5-6-6.5-11.8C9.5 9.2 12 6 16 6z' fill='%23B08D57'/%3E%3C/svg%3E">
+
+<!-- フォント: 使用ウェイトのみ・display=swap -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Zen+Old+Mincho:wght@500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+<!-- 構造化データ（架空のデモ情報） -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NailSalon",
+  "name": "Nail Salon Calme",
+  "description": "オフィスにも馴染む上品なデザインが得意な、自由が丘のプライベートネイルサロン。平日22時まで営業。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "目黒区",
+    "addressRegion": "東京都",
+    "streetAddress": "自由が丘1-2-3 カルムビル2F",
+    "postalCode": "152-0035",
+    "addressCountry": "JP"
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "11:00", "closes": "22:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday","Sunday"], "opens": "10:00", "closes": "19:00" }
+  ],
+  "priceRange": "¥6,600〜¥9,900",
+  "url": "https://example.com/"
+}
+</script>
+</head>
+<body>
+
+<!-- ===== ヘッダー ===== -->
+<header class="header" id="header">
+  <a class="logo" href="#top" aria-label="Nail Salon Calme トップへ">
+    <span class="logo-en">Calme</span>
+    <span class="logo-ja">ネイルサロン カルム｜自由が丘</span>
+  </a>
+  <nav class="gnav" id="gnav" aria-label="メインナビゲーション">
+    <ul>
+      <li><a href="#worries">お悩み</a></li>
+      <li><a href="#reasons">選ばれる理由</a></li>
+      <li><a href="#menu">メニュー・料金</a></li>
+      <li><a href="#voice">お客様の声</a></li>
+      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#access">アクセス</a></li>
+    </ul>
+    <a class="btn btn-line btn-nav" href="#cta">LINEで予約する</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-controls="gnav" aria-expanded="false">
+    <span class="menu-bar" aria-hidden="true"></span>
+    <span class="menu-label">メニュー</span>
+  </button>
+</header>
+
+<main id="top">
+
+<!-- ===== ファーストビュー ===== -->
+<section class="fv" aria-label="メインビジュアル">
+  <div class="fv-inner">
+    <div class="fv-text">
+      <p class="fv-en">NAIL SALON CALME — JIYUGAOKA</p>
+      <h1 class="fv-catch">
+        <span class="fv-line"><span>オフィスで褒められる爪は、</span></span>
+        <span class="fv-line"><span>夜、つくられる。</span></span>
+      </h1>
+      <p class="fv-sub">仕事帰りでも間に合う、平日22時まで営業のプライベートネイルサロン。<br>派手ではないのに、目を引く。そんな「品のある指先」をご提案します。</p>
+      <ul class="fv-badges">
+        <li>自由が丘駅 徒歩3分</li>
+        <li>平日22時まで営業</li>
+        <li>完全予約制・1席のみ</li>
+      </ul>
+      <div class="fv-cta">
+        <a class="btn btn-line btn-lg" href="#cta">LINEで予約する<small>24時間受付・友だち登録から1分</small></a>
+      </div>
+    </div>
+    <div class="fv-visual" aria-hidden="true">
+      <p class="fv-vertical">大人の指先に、品を。</p>
+      <div class="chip-fan">
+        <span class="chip chip-1"></span>
+        <span class="chip chip-2"></span>
+        <span class="chip chip-3"></span>
+        <span class="chip chip-4"></span>
+        <span class="chip chip-5"></span>
+      </div>
+      <div class="fv-glow"></div>
+    </div>
+  </div>
+  <div class="fv-foot" aria-hidden="true"><span>SCROLL</span></div>
+</section>
+
+<!-- ===== 悩み共感 ===== -->
+<section class="sec worries" id="worries">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="sec-en">YOUR CONCERNS</p>
+      <h2 class="sec-title">こんなふうに、あきらめていませんか</h2>
+    </div>
+    <ul class="worry-list">
+      <li class="worry reveal"><span class="worry-num">壱</span><p>「派手なネイルは職場でNG。<br>かといって、<em>何もしない指先は物足りない</em>」</p></li>
+      <li class="worry reveal"><span class="worry-num">弐</span><p>「サロンはどこも19時まで。<br><em>残業のある私には、そもそも通えない</em>」</p></li>
+      <li class="worry reveal"><span class="worry-num">参</span><p>「ジェルを続けていたら<br><em>自爪が薄く、傷んでしまった</em>」</p></li>
+    </ul>
+    <div class="worry-bridge reveal">
+      <p>その3つ、<strong>すべてカルムが解決します。</strong></p>
+      <p class="worry-bridge-sub">「上品さ」と「通いやすさ」と「爪の健康」。働く女性のためだけに設計したサロンです。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 選ばれる理由 ===== -->
+<section class="sec reasons" id="reasons">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="sec-en">3 REASONS</p>
+      <h2 class="sec-title">カルムが選ばれる、3つの理由</h2>
+    </div>
+
+    <div class="reason reveal">
+      <div class="reason-text">
+        <p class="reason-num">01</p>
+        <h3>「オフィスOK」に特化した<br>デザイン提案</h3>
+        <p>金融・医療・接客業など、お勤め先の規定に合わせて「どこまで許されるか」から一緒に考えます。肌が綺麗に見えるベージュ・グレージュを中心に、<strong>会議で手元を出しても浮かない、それでいて鏡を見るたび嬉しくなる</strong>絶妙なラインをご提案。</p>
+      </div>
+      <div class="reason-visual" aria-hidden="true">
+        <div class="palette">
+          <div class="palette-item"><span class="chip chip-p1"></span><span class="palette-name">シアーベージュ</span></div>
+          <div class="palette-item"><span class="chip chip-p2"></span><span class="palette-name">ローズグレージュ</span></div>
+          <div class="palette-item"><span class="chip chip-p3"></span><span class="palette-name">ミルクティー</span></div>
+          <div class="palette-item"><span class="chip chip-p4"></span><span class="palette-name">オートミール</span></div>
+          <div class="palette-item"><span class="chip chip-p5"></span><span class="palette-name">スモーキーモーヴ</span></div>
+        </div>
+        <p class="palette-caption">— 定番人気のオフィスカラー（一例）</p>
+      </div>
+    </div>
+
+    <div class="reason reason-rev reveal">
+      <div class="reason-text">
+        <p class="reason-num">02</p>
+        <h3>平日22時まで。<br>仕事帰りに「そのまま」通える</h3>
+        <p>最終受付は20時30分。自由が丘駅から徒歩3分なので、<strong>18時に会社を出て、19時の施術に間に合います。</strong>完全予約制・1席のみのプライベート空間だから、疲れた日は会話を控えめに、静かに過ごしていただいても構いません。</p>
+      </div>
+      <div class="reason-visual" aria-hidden="true">
+        <div class="timeline">
+          <div class="tl-row"><span class="tl-time">18:00</span><span class="tl-label">退社</span></div>
+          <div class="tl-row"><span class="tl-time">18:55</span><span class="tl-label">自由が丘駅 着</span></div>
+          <div class="tl-row tl-em"><span class="tl-time">19:00</span><span class="tl-label">施術スタート</span></div>
+          <div class="tl-row"><span class="tl-time">21:00</span><span class="tl-label">仕上がり・帰宅へ</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reason reveal">
+      <div class="reason-text">
+        <p class="reason-num">03</p>
+        <h3>爪を削りすぎない<br>「フィルイン」で長く付き合う</h3>
+        <p>付け替えのたびにジェルを全部剥がすのではなく、ベースを残して付け替える<strong>フィルイン施術が標準</strong>。自爪へのダメージを最小限に抑えるので、「ジェルで爪が薄くなった」方こそご相談ください。爪の状態に合わせたケアメニューもご用意しています。</p>
+      </div>
+      <div class="reason-visual" aria-hidden="true">
+        <div class="layer-fig">
+          <div class="layer layer-top"><span>カラー層 — 毎回付け替え</span></div>
+          <div class="layer layer-base"><span>ベース層 — 残して保護</span></div>
+          <div class="layer layer-nail"><span>自爪 — 削らない</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 中間CTA ===== -->
+<section class="midcta">
+  <div class="container reveal">
+    <p class="midcta-copy">初回のご相談は、写真を送るだけ。</p>
+    <p class="midcta-sub">「この服に合うネイルは？」「職場の規定が厳しくて…」— LINEでお気軽にどうぞ。</p>
+    <a class="btn btn-line btn-lg" href="#cta">LINEで相談・予約する</a>
+  </div>
+</section>
+
+<!-- ===== メニューと料金 ===== -->
+<section class="sec menu" id="menu">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="sec-en">MENU &amp; PRICE</p>
+      <h2 class="sec-title">メニューと料金</h2>
+      <p class="sec-lead">すべて税込・ケア込みの価格です。他店ジェルのオフは初回無料。</p>
+    </div>
+    <div class="menu-box reveal">
+      <dl class="price-list">
+        <div class="price-row"><dt>ワンカラー / ラメグラデーション<small>ベーシックなオフィスネイルに</small></dt><dd>¥6,600</dd></div>
+        <div class="price-row"><dt>シアーグラデーション<small>指先が長く見える定番人気</small></dt><dd>¥7,150</dd></div>
+        <div class="price-row price-em"><dt>オフィス上品コース<small>カラー＋ワンポイントアート2本・一番人気</small></dt><dd>¥8,250</dd></div>
+        <div class="price-row"><dt>定額デザインコース<small>毎月更新のサンプルから選べます</small></dt><dd>¥9,350</dd></div>
+        <div class="price-row"><dt>爪育ケアコース<small>ジェルお休み期間の集中ケア</small></dt><dd>¥5,500</dd></div>
+        <div class="price-row"><dt>付け替えオフ（当店）<small>フィルインのため負担最小</small></dt><dd>¥0</dd></div>
+        <div class="price-row"><dt>オフのみ（他店ジェル）<small>初回は無料です</small></dt><dd>¥1,650</dd></div>
+      </dl>
+      <p class="price-note">※ 深爪・爪の傷みが強い場合は、状態を拝見してケアメニューからのスタートをご提案することがあります。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== お客様の声 ===== -->
+<section class="sec voice" id="voice">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="sec-en">VOICES</p>
+      <h2 class="sec-title">お客様の声</h2>
+    </div>
+    <div class="voice-grid">
+      <figure class="voice-card reveal">
+        <blockquote><p>「銀行勤めなので半ば諦めていましたが、『規定内で一番きれいに見える色』を一緒に探してくれました。同僚に『手、きれいだね』と言われたのが嬉しくて、もう1年通っています。</p></blockquote>
+        <figcaption>30代・金融</figcaption>
+      </figure>
+      <figure class="voice-card reveal">
+        <blockquote><p>「21時スタートでお願いできるサロンは初めて。残業デーでも諦めなくていいのが本当にありがたいです。静かな店内で、施術中うとうとしてしまうほど落ち着きます。</p></blockquote>
+        <figcaption>40代・IT</figcaption>
+      </figure>
+      <figure class="voice-card reveal">
+        <blockquote><p>「他店で薄くなった爪をフィルインで立て直してもらいました。3ヶ月で折れにくくなり、今は月1の付け替えだけ。爪の健康まで見てくれるサロンです。</p></blockquote>
+        <figcaption>30代・医療</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===== よくある質問 ===== -->
+<section class="sec faq" id="faq">
+  <div class="container container-narrow">
+    <div class="sec-head reveal">
+      <p class="sec-en">FAQ</p>
+      <h2 class="sec-title">よくある質問</h2>
+    </div>
+    <div class="faq-list reveal">
+      <details class="faq-item">
+        <summary>予約はどうすればいいですか？<span class="faq-icon" aria-hidden="true"></span></summary>
+        <div class="faq-body"><p>LINE公式アカウントを友だち追加のうえ、トークから「希望日時・メニュー」をお送りください。24時間受け付けており、当日中にご返信します。電話が苦手な方もご安心ください。</p></div>
+      </details>
+      <details class="faq-item">
+        <summary>当日予約はできますか？<span class="faq-icon" aria-hidden="true"></span></summary>
+        <div class="faq-body"><p>空きがあれば可能です。LINEで「今日入れますか？」とお送りいただければ最短でご案内します。1席のみのため、前日までのご予約が確実です。</p></div>
+      </details>
+      <details class="faq-item">
+        <summary>職場の規定が厳しいのですが、相談できますか？<span class="faq-icon" aria-hidden="true"></span></summary>
+        <div class="faq-body"><p>むしろ得意分野です。「肌色に近い範囲で」「ラメ不可」など規定の内容を教えていただければ、その範囲内で最大限きれいに見えるご提案をします。事前にLINEで規定を送っていただくとスムーズです。</p></div>
+      </details>
+      <details class="faq-item">
+        <summary>支払い方法は何が使えますか？<span class="faq-icon" aria-hidden="true"></span></summary>
+        <div class="faq-body"><p>現金のほか、各種クレジットカード・交通系IC・QRコード決済に対応しています。</p></div>
+      </details>
+      <details class="faq-item">
+        <summary>デザインの持ち込みはできますか？<span class="faq-icon" aria-hidden="true"></span></summary>
+        <div class="faq-body"><p>SNSの保存画像など、お好きなデザインをお持ちください。オフィス向けにトーンを調整しつつ、雰囲気を活かして再現します。追加料金はアートの本数に応じてご案内します。</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ===== アクセス ===== -->
+<section class="sec access" id="access">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="sec-en">ACCESS</p>
+      <h2 class="sec-title">アクセス・営業時間</h2>
+    </div>
+    <div class="access-grid reveal">
+      <div class="access-map" aria-hidden="true">
+        <div class="map-deco">
+          <span class="map-road map-road-h"></span>
+          <span class="map-road map-road-v"></span>
+          <span class="map-station">自由が丘駅</span>
+          <span class="map-pin"><i></i>Calme</span>
+          <span class="map-walk">徒歩3分</span>
+        </div>
+      </div>
+      <dl class="access-info">
+        <div><dt>店名</dt><dd>Nail Salon Calme（カルム）</dd></div>
+        <div><dt>住所</dt><dd>東京都目黒区自由が丘1-2-3 カルムビル2F<br><small>※ 本サイトはポートフォリオ用のデモです（架空の店舗）</small></dd></div>
+        <div><dt>アクセス</dt><dd>東急東横線・大井町線「自由が丘駅」正面口より徒歩3分</dd></div>
+        <div><dt>営業時間</dt><dd>平日 11:00〜22:00（最終受付 20:30）<br>土日 10:00〜19:00</dd></div>
+        <div><dt>定休日</dt><dd>水曜・第3木曜</dd></div>
+        <div><dt>ご予約</dt><dd>完全予約制／LINEにて24時間受付</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 最終CTA ===== -->
+<section class="cta" id="cta">
+  <div class="container reveal">
+    <p class="cta-en">RESERVATION</p>
+    <h2 class="cta-title">今週の仕事終わり、<br class="sp-only">指先だけ整えに来ませんか。</h2>
+    <p class="cta-sub">友だち追加のあと、トークで「予約希望」と送るだけ。<br>初回は他店ジェルのオフ無料＋カウンセリング15分をプレゼントしています。</p>
+    <a class="btn btn-line btn-xl" href="https://line.me/R/ti/p/@example" target="_blank" rel="noopener">LINEで友だち追加して予約する<small>登録は1分・しつこい配信はしません</small></a>
+    <p class="cta-note">※ デモサイトのためリンク先はサンプルです</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p class="footer-logo">Calme</p>
+  <p class="footer-copy"><small>© 2026 Nail Salon Calme（架空のデモサイト・LP制作ポートフォリオ）</small></p>
+</footer>
+
+<!-- スマホ固定CTA -->
+<div class="fixed-cta" id="fixedCta" aria-hidden="true">
+  <a class="btn btn-line" href="#cta" tabindex="-1">LINEで予約する｜24時間受付</a>
+</div>
+
+<script src="js/script.js" defer></script>
+</body>
+</html>
