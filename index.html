@@ -26,6 +26,9 @@
 
 <link rel="stylesheet" href="css/style.css">
 
+<!-- FV画像を最優先で先読み -->
+<link rel="preload" as="image" href="assets/img/hero.webp" fetchpriority="high">
+
 <!-- 構造化データ（架空のデモ情報） -->
 <script type="application/ld+json">
 {
@@ -96,16 +99,11 @@
         <a class="btn btn-line btn-lg" href="#cta">LINEで予約する<small>24時間受付・友だち登録から1分</small></a>
       </div>
     </div>
-    <div class="fv-visual" aria-hidden="true">
-      <p class="fv-vertical">大人の指先に、品を。</p>
-      <div class="chip-fan">
-        <span class="chip chip-1"></span>
-        <span class="chip chip-2"></span>
-        <span class="chip chip-3"></span>
-        <span class="chip chip-4"></span>
-        <span class="chip chip-5"></span>
-      </div>
-      <div class="fv-glow"></div>
+    <div class="fv-visual">
+      <figure class="fv-photo">
+        <img src="assets/img/hero.webp" width="900" height="1200" loading="eager" fetchpriority="high" decoding="async" alt="シアーなベージュで上品に仕上げたネイルの手元">
+        <span class="fv-vertical" aria-hidden="true">大人の指先に、品を。</span>
+      </figure>
     </div>
   </div>
   <div class="fv-foot" aria-hidden="true"><span>SCROLL</span></div>
@@ -127,6 +125,15 @@
       <p>その3つ、<strong>すべてカルムが解決します。</strong></p>
       <p class="worry-bridge-sub">「上品さ」と「通いやすさ」と「爪の健康」。働く女性のためだけに設計したサロンです。</p>
     </div>
+  </div>
+</section>
+
+<!-- ===== 施術シーン（実写バンド） ===== -->
+<section class="band" aria-label="施術風景">
+  <img class="band-img" src="assets/img/service.webp" width="1280" height="720" loading="lazy" decoding="async" alt="一人ひとりの爪に合わせて施術するネイリストの手元">
+  <div class="band-overlay">
+    <p class="band-lead">一人ひとりの指先に、<br>静かに向き合う時間。</p>
+    <p class="band-sub">1席だけのプライベートサロンだから、急かされない。あなたの爪の状態と、その日の気分にだけ集中します。</p>
   </div>
 </section>
 
@@ -207,6 +214,9 @@
       <p class="sec-lead">すべて税込・ケア込みの価格です。他店ジェルのオフは初回無料。</p>
     </div>
     <div class="menu-box reveal">
+      <figure class="menu-photo">
+        <img src="assets/img/atelier.webp" width="1000" height="750" loading="lazy" decoding="async" alt="大理石のテーブルで丁寧に施されるネイルの様子">
+      </figure>
       <dl class="price-list">
         <div class="price-row"><dt>ワンカラー / ラメグラデーション<small>ベーシックなオフィスネイルに</small></dt><dd>¥6,600</dd></div>
         <div class="price-row"><dt>シアーグラデーション<small>指先が長く見える定番人気</small></dt><dd>¥7,150</dd></div>

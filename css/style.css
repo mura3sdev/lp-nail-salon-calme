@@ -173,15 +173,30 @@ small{ letter-spacing:.05em; }
 }
 .fv-cta{ margin-top:36px; animation:fadeIn 1s ease 1.3s both; }
 
-/* FV 右側ビジュアル */
-.fv-visual{ position:relative; height:100%; min-height:380px; }
+/* FV 右側ビジュアル（実写ヒーロー） */
+.fv-visual{ position:relative; display:flex; justify-content:flex-end; align-items:center; min-height:380px; }
+.fv-photo{
+  position:relative; width:min(380px, 88%);
+  animation:fadeIn 1.2s ease .5s both;
+}
+.fv-photo img{
+  width:100%; height:auto; display:block;
+  border-radius:4px;
+  border:1px solid var(--line-dark);
+  box-shadow:0 30px 64px rgba(0,0,0,.45);
+}
+/* ラウンジの暗がりに馴染ませる微かなヴィネット */
+.fv-photo::after{
+  content:""; position:absolute; inset:0; border-radius:4px; pointer-events:none;
+  background:linear-gradient(180deg, rgba(27,27,35,.30), transparent 26%, transparent 72%, rgba(27,27,35,.30));
+}
 .fv-vertical{
-  position:absolute; top:8%; right:6%;
+  position:absolute; top:18px; right:-14px; z-index:2;
   writing-mode:vertical-rl;
   font-family:var(--serif); font-weight:500;
   font-size:clamp(15px, 1.6vw, 19px);
-  letter-spacing:.5em; color:rgba(247,242,234,.55);
-  animation:fadeIn 1.2s ease 1.2s both;
+  letter-spacing:.5em; color:var(--ivory);
+  text-shadow:0 2px 14px rgba(0,0,0,.65);
 }
 .fv-glow{
   position:absolute; left:18%; top:34%;
@@ -296,6 +311,38 @@ small{ letter-spacing:.05em; }
 }
 .worry-bridge-sub{ margin-top:12px; color:var(--ink-soft); font-size:14px; }
 
+/* ============ 施術シーン（実写バンド） ============ */
+.band{
+  position:relative; overflow:hidden;
+  min-height:clamp(320px, 52vw, 520px);
+  display:flex; align-items:center;
+}
+.band-img{
+  position:absolute; inset:0;
+  width:100%; height:100%; object-fit:cover;
+  object-position:center 38%;
+}
+/* 墨色のグラデーションで文字の可読性を確保 */
+.band::after{
+  content:""; position:absolute; inset:0;
+  background:linear-gradient(90deg, rgba(27,27,35,.78) 0%, rgba(27,27,35,.55) 42%, rgba(27,27,35,.12) 100%);
+}
+.band-overlay{
+  position:relative; z-index:1;
+  max-width:880px; width:100%;
+  margin:0 auto; padding:0 48px;
+  color:var(--paper);
+}
+.band-lead{
+  font-family:var(--serif); font-weight:700;
+  font-size:clamp(22px, 3.4vw, 36px);
+  line-height:1.45; letter-spacing:.06em;
+}
+.band-sub{
+  margin-top:18px; max-width:420px;
+  font-size:14px; line-height:2; color:rgba(247,242,234,.82);
+}
+
 /* ============ 選ばれる理由 ============ */
 .reason{
   display:grid; grid-template-columns:1.05fr .95fr;
@@ -401,7 +448,24 @@ small{ letter-spacing:.05em; }
 
 /* ============ メニューと料金 ============ */
 .menu{ background:var(--white); }
-.menu-box{ max-width:760px; margin:0 auto; }
+.menu-box{
+  max-width:920px; margin:0 auto;
+  display:grid; grid-template-columns:0.82fr 1.18fr;
+  gap:clamp(24px, 4vw, 48px); align-items:start;
+}
+.menu-photo{ position:sticky; top:96px; }
+.menu-photo img{
+  width:100%; height:auto; display:block;
+  border-radius:4px;
+  box-shadow:14px 14px 0 var(--ivory-deep);
+}
+.menu-box .price-list{ grid-column:2; }
+.menu-box .price-note{ grid-column:2; }
+@media(max-width:760px){
+  .menu-box{ grid-template-columns:1fr; gap:24px; }
+  .menu-photo{ position:static; max-width:420px; margin:0 auto; }
+  .menu-box .price-list, .menu-box .price-note{ grid-column:1; }
+}
 .price-list{ border-top:1px solid var(--line); }
 .price-row{
   display:flex; justify-content:space-between; align-items:flex-end; gap:20px;
