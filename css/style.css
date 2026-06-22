@@ -174,13 +174,23 @@ small{ letter-spacing:.05em; }
 .fv-cta{ margin-top:36px; animation:fadeIn 1s ease 1.3s both; }
 
 /* FV 右側ビジュアル */
-.fv-visual{ position:relative; height:100%; min-height:380px; }
+.fv-visual{ position:relative; height:100%; min-height:380px; display:flex; align-items:center; justify-content:center; }
+.fv-photo{
+  position:relative; width:min(360px, 100%); margin:0;
+  animation:fadeIn 1.2s ease .6s both;
+}
+.fv-photo img{
+  width:100%; aspect-ratio:2/3; object-fit:cover;
+  border-radius:4px;
+  box-shadow:0 30px 60px rgba(27,20,15,.45);
+}
 .fv-vertical{
-  position:absolute; top:8%; right:6%;
+  position:absolute; top:18px; right:-14px;
   writing-mode:vertical-rl;
   font-family:var(--serif); font-weight:500;
   font-size:clamp(15px, 1.6vw, 19px);
-  letter-spacing:.5em; color:rgba(247,242,234,.55);
+  letter-spacing:.5em; color:var(--ivory);
+  text-shadow:0 2px 12px rgba(0,0,0,.6);
   animation:fadeIn 1.2s ease 1.2s both;
 }
 .fv-glow{
@@ -400,8 +410,35 @@ small{ letter-spacing:.05em; }
 .midcta-sub{ margin:12px 0 28px; font-size:14px; color:var(--ink-soft); }
 
 /* ============ メニューと料金 ============ */
+/* ===== 実写バンド ===== */
+.band{ position:relative; }
+.band-img{ width:100%; height:clamp(320px, 46vw, 520px); object-fit:cover; display:block; }
+.band::after{ content:""; position:absolute; inset:0;
+  background:linear-gradient(90deg, rgba(27,20,15,.80), rgba(27,20,15,.30) 58%, rgba(27,20,15,.05)); }
+.band-overlay{
+  position:absolute; inset:0; z-index:1;
+  max-width:1100px; margin:0 auto;
+  display:flex; flex-direction:column; justify-content:center;
+  padding:0 clamp(24px, 6vw, 72px);
+}
+.band-lead{
+  font-family:var(--serif); font-weight:700; color:var(--ivory);
+  font-size:clamp(22px, 3.4vw, 34px); line-height:1.5; letter-spacing:.06em;
+}
+.band-sub{ margin-top:14px; color:rgba(247,242,234,.88); font-size:14px; max-width:30em; }
+
+/* ===== メニュー ===== */
 .menu{ background:var(--white); }
-.menu-box{ max-width:760px; margin:0 auto; }
+.menu-box{
+  max-width:920px; margin:0 auto;
+  display:grid; grid-template-columns:0.85fr 1.15fr; gap:clamp(24px, 4vw, 48px);
+  align-items:start;
+}
+.menu-figure{ margin:0; position:sticky; top:96px; }
+.menu-figure img{
+  width:100%; aspect-ratio:1/1; object-fit:cover;
+  border-radius:4px; box-shadow:14px 14px 0 var(--ivory-deep);
+}
 .price-list{ border-top:1px solid var(--line); }
 .price-row{
   display:flex; justify-content:space-between; align-items:flex-end; gap:20px;
@@ -652,4 +689,10 @@ small{ letter-spacing:.05em; }
   .price-row dd{ font-size:19px; }
   .btn-xl{ width:100%; padding:18px 20px; }
   .access-info > div{ grid-template-columns:80px 1fr; }
+  .band-lead br{ display:none; }
+}
+
+@media (max-width: 820px){
+  .menu-box{ grid-template-columns:1fr; gap:24px; }
+  .menu-figure{ position:static; max-width:420px; }
 }

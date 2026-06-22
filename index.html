@@ -26,6 +26,9 @@
 
 <link rel="stylesheet" href="css/style.css">
 
+<!-- FV画像を最優先で先読み -->
+<link rel="preload" as="image" href="assets/img/hero.webp" fetchpriority="high">
+
 <!-- 構造化データ（架空のデモ情報） -->
 <script type="application/ld+json">
 {
@@ -96,16 +99,11 @@
         <a class="btn btn-line btn-lg" href="#cta">LINEで予約する<small>24時間受付・友だち登録から1分</small></a>
       </div>
     </div>
-    <div class="fv-visual" aria-hidden="true">
-      <p class="fv-vertical">大人の指先に、品を。</p>
-      <div class="chip-fan">
-        <span class="chip chip-1"></span>
-        <span class="chip chip-2"></span>
-        <span class="chip chip-3"></span>
-        <span class="chip chip-4"></span>
-        <span class="chip chip-5"></span>
-      </div>
-      <div class="fv-glow"></div>
+    <div class="fv-visual">
+      <figure class="fv-photo">
+        <img src="assets/img/hero.webp" width="1000" height="1500" alt="シアーベージュで上品に仕上げたネイルの手元" fetchpriority="high" decoding="async">
+        <span class="fv-vertical" aria-hidden="true">大人の指先に、品を。</span>
+      </figure>
     </div>
   </div>
   <div class="fv-foot" aria-hidden="true"><span>SCROLL</span></div>
@@ -127,6 +125,15 @@
       <p>その3つ、<strong>すべてカルムが解決します。</strong></p>
       <p class="worry-bridge-sub">「上品さ」と「通いやすさ」と「爪の健康」。働く女性のためだけに設計したサロンです。</p>
     </div>
+  </div>
+</section>
+
+<!-- ===== 施術シーン（実写バンド） ===== -->
+<section class="band" aria-label="店内の様子">
+  <img class="band-img" src="assets/img/scene.webp" width="1400" height="933" loading="lazy" decoding="async" alt="夜のプライベートネイルサロンの店内">
+  <div class="band-overlay">
+    <p class="band-lead">一人ひとりの指先に、<br>静かに向き合う時間。</p>
+    <p class="band-sub">1席だけのプライベートサロン。急かされない夜の時間に、あなたの爪とだけ向き合います。</p>
   </div>
 </section>
 
@@ -207,16 +214,21 @@
       <p class="sec-lead">すべて税込・ケア込みの価格です。他店ジェルのオフは初回無料。</p>
     </div>
     <div class="menu-box reveal">
-      <dl class="price-list">
-        <div class="price-row"><dt>ワンカラー / ラメグラデーション<small>ベーシックなオフィスネイルに</small></dt><dd>¥6,600</dd></div>
-        <div class="price-row"><dt>シアーグラデーション<small>指先が長く見える定番人気</small></dt><dd>¥7,150</dd></div>
-        <div class="price-row price-em"><dt>オフィス上品コース<small>カラー＋ワンポイントアート2本・一番人気</small></dt><dd>¥8,250</dd></div>
-        <div class="price-row"><dt>定額デザインコース<small>毎月更新のサンプルから選べます</small></dt><dd>¥9,350</dd></div>
-        <div class="price-row"><dt>爪育ケアコース<small>ジェルお休み期間の集中ケア</small></dt><dd>¥5,500</dd></div>
-        <div class="price-row"><dt>付け替えオフ（当店）<small>フィルインのため負担最小</small></dt><dd>¥0</dd></div>
-        <div class="price-row"><dt>オフのみ（他店ジェル）<small>初回は無料です</small></dt><dd>¥1,650</dd></div>
-      </dl>
-      <p class="price-note">※ 深爪・爪の傷みが強い場合は、状態を拝見してケアメニューからのスタートをご提案することがあります。</p>
+      <figure class="menu-figure">
+        <img src="assets/img/detail.webp" width="800" height="800" loading="lazy" decoding="async" alt="ベージュ系のジェルカラーとハンドケア用品">
+      </figure>
+      <div class="menu-detail">
+        <dl class="price-list">
+          <div class="price-row"><dt>ワンカラー / ラメグラデーション<small>ベーシックなオフィスネイルに</small></dt><dd>¥6,600</dd></div>
+          <div class="price-row"><dt>シアーグラデーション<small>指先が長く見える定番人気</small></dt><dd>¥7,150</dd></div>
+          <div class="price-row price-em"><dt>オフィス上品コース<small>カラー＋ワンポイントアート2本・一番人気</small></dt><dd>¥8,250</dd></div>
+          <div class="price-row"><dt>定額デザインコース<small>毎月更新のサンプルから選べます</small></dt><dd>¥9,350</dd></div>
+          <div class="price-row"><dt>爪育ケアコース<small>ジェルお休み期間の集中ケア</small></dt><dd>¥5,500</dd></div>
+          <div class="price-row"><dt>付け替えオフ（当店）<small>フィルインのため負担最小</small></dt><dd>¥0</dd></div>
+          <div class="price-row"><dt>オフのみ（他店ジェル）<small>初回は無料です</small></dt><dd>¥1,650</dd></div>
+        </dl>
+        <p class="price-note">※ 深爪・爪の傷みが強い場合は、状態を拝見してケアメニューからのスタートをご提案することがあります。</p>
+      </div>
     </div>
   </div>
 </section>
